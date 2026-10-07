@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Noodle Nook — Ramen you've been craving</title>
+  <meta name="description" content="Slow-simmered ramen made by hand. Black garlic tonkotsu, spicy miso, garlic shoyu and veggie miso bowls.">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Anton&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Icon set (line icons) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+      <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 7h12l1 13H5L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></symbol>
+      <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+      <symbol id="i-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="top">
+    <div class="hero__card">
+      <a class="hero__logo" href="#top" aria-label="Noodle Nook home">
+        <img src="assets/logo.png" alt="" width="56" height="56">
+      </a>
+
+      <nav class="hero__nav" aria-label="Quick actions">
+        <button class="icon-btn" type="button" aria-label="Search the menu"><svg><use href="#i-search"/></svg></button>
+        <button class="icon-btn icon-btn--cart" type="button" aria-label="Your order">
+          <svg><use href="#i-bag"/></svg>
+          <span class="cart-count" data-cart-count hidden>0</span>
+        </button>
+        <a class="pill pill--maroon" href="#menu">Order now</a>
+      </nav>
+
+      <div class="hero__copy">
+        <h1 class="hero__title">You’ve<br>been<br><span>craving<br>this.</span></h1>
+        <a class="pill-group" href="#menu">
+          <span class="pill pill--cream">Order now</span>
+          <span class="circle circle--cream"><svg><use href="#i-arrow"/></svg></span>
+        </a>
+      </div>
+
+      <img class="hero__bowl" src="assets/hero-bowl.png" alt="A hand holding a red checkered bowl of black garlic tonkotsu ramen" width="1000" height="1000">
+
+      <div class="hero__feature" aria-live="polite">
+        <h2 class="hero__feature-name" data-feature-name>Black Garlic Tonkotsu</h2>
+        <p class="hero__feature-price" data-feature-price>Php 420</p>
+        <svg class="hero__swoosh" viewBox="0 0 60 50" aria-hidden="true"><path d="M4 44c14 2 30-8 40-30M30 12l14 2 2 14"/></svg>
+        <p class="hero__feature-desc" data-feature-desc>Creamy pork broth simmered for hours, springy noodles, torched chashu, jammy egg, nori, scallions, and house-made chili oil.</p>
+      </div>
+
+      <div class="hero__next">
+        <div class="hero__arrows">
+          <button class="circle circle--maroon" type="button" data-feature-prev aria-label="Previous bowl"><svg><use href="#i-left"/></svg></button>
+          <button class="circle circle--maroon" type="button" data-feature-next aria-label="Next bowl"><svg><use href="#i-right"/></svg></button>
+        </div>
+        <button class="hero__next-card" type="button" data-feature-next aria-label="Show next bowl">
+          <img src="assets/classic-shoyu.png" alt="" data-next-img width="600" height="600">
+          <span>
+            <span class="hero__next-name" data-next-name>Classic Shoyu</span>
+            <span class="price-tag price-tag--yellow" data-next-price>Php 325</span>
+          </span>
+        </button>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Ramen that hits different</span><span>Your new noodle obsession</span><span>Bowls made for sharing</span>
+          <span>Ramen that hits different</span><span>Your new noodle obsession</span><span>Bowls made for sharing</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+      <div class="heading-wrap">
+        <h2 class="section-title section-title--maroon">Prepare to fall for ramen. One slurp, and you’re hooked.</h2>
+        <span class="sticker sticker--right">Made for cravings</span>
+      </div>
+      <p class="about__text">Our cooks wake before sunrise to start the broth, letting it simmer slowly for hours until it’s rich and creamy. They taste, tweak, and plate each bowl with care, adding every topping by hand. Because they love ramen as much as you do, every bowl feels made just for you.</p>
+      <a class="pill-group" href="#look-inside">
+        <span class="pill pill--maroon">More about us</span>
+        <span class="circle circle--maroon"><svg><use href="#i-arrow"/></svg></span>
+      </a>
+      <img class="about__photo about__photo--left" src="assets/noodle-lift.jpg" alt="Chopsticks lifting noodles from a bowl" width="300" height="450" loading="lazy">
+      <img class="about__photo about__photo--right" src="assets/two-bowls.jpg" alt="Two bowls of ramen on a wooden table" width="300" height="375" loading="lazy">
+    </section>
+
+    <!-- ============ LOOK INSIDE / GOOD STUFF ============ -->
+    <section class="split" id="look-inside">
+      <div class="split__photo">
+        <img src="assets/look-inside.jpg" alt="A hand lifting noodles with chopsticks from a ramen bowl" width="1200" height="1200" loading="lazy">
+        <p class="split__overlay">Look<br>inside.</p>
+      </div>
+      <div class="split__panel">
+        <h2 class="section-title section-title--maroon">The good stuff</h2>
+        <img src="assets/good-stuff-bowl.png" alt="A black bowl of ramen topped with chashu, eggs and nori" width="700" height="700" loading="lazy">
+        <p class="split__caption">Stacked with the good stuff.</p>
+        <a class="pill-group" href="#footer">
+          <span class="pill pill--maroon">Socials</span>
+          <span class="circle circle--maroon"><svg><use href="#i-arrow"/></svg></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ MENU ============ -->
+    <section class="menu" id="menu">
+      <div class="heading-wrap">
+        <h2 class="section-title">Meet the bowls you will crave.</h2>
+        <span class="sticker sticker--right">Crew’s fave creations</span>
+      </div>
+
+      <div class="menu__grid">
+        <article class="bowl-card">
+          <button class="circle circle--maroon circle--sm bowl-card__add" type="button" data-add="Veggie Miso" aria-label="Add Veggie Miso to your order"><svg><use href="#i-plus"/></svg></button>
+          <img src="assets/veggie-miso.png" alt="Veggie miso ramen with tofu, bok choy and mushrooms" width="600" height="600" loading="lazy">
+          <div class="bowl-card__head">
+            <h3>[[ Veggie Miso ]]</h3>
+            <span class="price-tag">Php 295</span>
+          </div>
+          <p>Golden miso broth with crispy tofu, bok choy, shiitake, and edamame, all plant-powered goodness.</p>
+        </article>
+
+        <article class="bowl-card">
+          <button class="circle circle--maroon circle--sm bowl-card__add" type="button" data-add="Garlic Shoyu" aria-label="Add Garlic Shoyu to your order"><svg><use href="#i-plus"/></svg></button>
+          <img src="assets/garlic-shoyu.png" alt="Garlic shoyu ramen with chashu, egg and narutomaki" width="600" height="600" loading="lazy">
+          <div class="bowl-card__head">
+            <h3>[[ Garlic Shoyu ]]</h3>
+            <span class="price-tag">Php 325</span>
+          </div>
+          <p>Clear soy broth, tender chashu, and narutomaki, a timeless bowl that feels like home.</p>
+        </article>
+
+        <article class="bowl-card">
+          <button class="circle circle--maroon circle--sm bowl-card__add" type="button" data-add="Spicy Miso" aria-label="Add Spicy Miso to your order"><svg><use href="#i-plus"/></svg></button>
+          <img src="assets/spicy-miso.png" alt="Spicy miso ramen with minced pork, corn and chili threads" width="600" height="600" loading="lazy">
+          <div class="bowl-card__head">
+            <h3>[[ Spicy Miso ]]</h3>
+            <span class="price-tag">Php 365</span>
+          </div>
+          <p>Creamy pork broth, torched chashu, jammy egg, and house chili oil, our crew’s pride.</p>
+        </article>
+
+        <article class="bowl-card">
+          <button class="circle circle--maroon circle--sm bowl-card__add" type="button" data-add="Black Garlic Tonkotsu" aria-label="Add Black Garlic Tonkotsu to your order"><svg><use href="#i-plus"/></svg></button>
+          <img src="assets/black-garlic-tonkotsu.png" alt="Black garlic tonkotsu ramen with chashu and egg" width="600" height="600" loading="lazy">
+          <div class="bowl-card__head">
+            <h3>[[ Black Garlic Tonkotsu ]]</h3>
+            <span class="price-tag">Php 420</span>
+          </div>
+          <p>Rich tonkotsu swirled with black garlic oil and crispy garlic, bold, smoky, unforgettable.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="reviews" id="reviews">
+      <div class="heading-wrap">
+        <h2 class="section-title">Hear it from our regulars</h2>
+        <span class="sticker sticker--right">Love notes</span>
+      </div>
+
+      <div class="reviews__banner">
+        <button class="circle circle--yellow" type="button" data-review-prev aria-label="Previous review"><svg><use href="#i-left"/></svg></button>
+        <figure class="reviews__card" aria-live="polite">
+          <blockquote data-review-quote>“Brought my barkada here after work and we ended up staying for hours. The Spicy Miso has the perfect kick, and the staff treated us like family.”</blockquote>
+          <figcaption data-review-name>Ms. Erika L.</figcaption>
+        </figure>
+        <button class="circle circle--yellow" type="button" data-review-next aria-label="Next review"><svg><use href="#i-right"/></svg></button>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="footer">
+    <div class="footer__card">
+      <div class="footer__cols">
+        <div>
+          <h3>Shop</h3>
+          <ul><li><a href="#menu">Best Seller</a></li><li><a href="#menu">All Ramen</a></li><li><a href="#menu">Sides &amp; Drinks</a></li></ul>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul><li><a href="#about">Our Story</a></li><li><a href="#look-inside">Our Approach</a></li><li><a href="#footer">Contacts</a></li></ul>
+        </div>
+        <div>
+          <h3>Follow</h3>
+          <ul><li><a href="#" rel="noopener">Instagram</a></li><li><a href="#" rel="noopener">Facebook</a></li><li><a href="#" rel="noopener">Tiktok</a></li></ul>
+        </div>
+      </div>
+      <p class="footer__wordmark" aria-label="Noodle Nook">Noodle Nook</p>
+    </div>
+    <img class="footer__photo" src="assets/footer-bowl.jpg" alt="A cook serving a bowl of tonkotsu ramen across the counter" width="900" height="1015" loading="lazy">
+  </footer>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
